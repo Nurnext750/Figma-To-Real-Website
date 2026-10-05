@@ -1,0 +1,503 @@
+* {margin: 0;
+padding: 0;}
+
+
+:root {
+    --orange-color:#da722C;
+    --Dark-blue-color:#023047;
+    --Dark-color:#070917;
+    --light-color:#E8F7FB;
+    --light-blue-color:#6F7DFB;}
+
+
+ *,
+ *::after
+ *::before { box-sizing: border-box;}
+ /* html {
+  box-sizing: border-box;
+ } */
+
+
+.font-raleway  .font-open-sans{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+
+
+}
+
+
+.btn {
+  border: 0;
+  padding: 18px 35px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #E8F7FB;
+  text-decoration: none;
+}
+
+.btn.dark {
+  background:var(--Dark-blue-color);
+}
+.btn.light {
+  background: var(--orange-color);
+}
+
+
+.wrapper {
+  max-width: 1134px;
+  margin: 0 auto;
+}
+
+header {
+
+background-color: #6F7DFB;
+height: 100vh;
+width: 100%;}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 1134px;
+  top: 36px;
+  z-index: 100;
+
+}
+  
+nav .logo {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+ 
+}
+
+
+nav ul {
+  display: flex;
+  gap: 510px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+
+nav ul li a {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.banner-section{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.banner-section  .left h1{
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 125%;
+  color: #E8F7FB;
+  margin-bottom: 20px;
+}
+
+.banner-section  .left p{
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 125%;
+  color: #E8F7FB;
+  margin-bottom: 20px;
+   width: 457px;
+}
+
+.banner-section  .left {
+  flex: 1;
+ 
+}
+
+/* .banner-section  .right{
+  align-self: flex-end;
+} */
+
+/* .banner-section  .right img{
+ height: 520px;
+ vertical-align: middle;
+} */
+
+
+.achievement-card {
+  position: absolute;
+  min-width: 200px;
+}
+
+
+.achievement-card .contant {
+ border-radius: 24px;
+ background-color: #ffffff;
+ padding: 8px 32px;
+ z-index: 10;
+ position: relative;
+}
+
+.achievement-card.students-enrolled {
+left: 49%;
+top: 270px;
+}
+
+.achievement-card.ovearll-rating {
+left: 47%;
+top: 470px;
+}
+
+
+
+
+.achievement-card  h2{
+ font-family: sans-serif;
+ font-weight: bold;
+ font-size: 36px;
+ color: var(--Dark-blue-color);
+ margin: -8px;
+ text-align: center;
+ margin-bottom: 8px;
+
+}
+
+.achievement-card  p{
+ font-family: sans-serif;
+ font-weight: normal;
+ font-size: 16px;
+ color: var(--Dark-blue-color);
+ margin: -5px;
+ text-align: center;
+ margin-bottom: 5px;
+
+}
+
+
+
+.achievement-card .bg{
+position: absolute;
+height: 100%;
+width: 100%;
+background: linear-gradient(180deg,
+#6F7DFB 0%, #3b448f 100%);
+border-radius: 24px;
+top: 8px;
+left: 8px;
+z-index: 1;
+}
+
+
+
+
+
+/* testimonials Sections */
+
+section {
+  margin-top: 100px;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  margin: 0;
+  color: var(--Dark-blue-color);
+}
+
+h2.light {
+  color: #ffffff;
+}
+
+section p {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  color: var(--Dark-blue-color);
+  margin: 12px 0;
+}
+
+.testimonials-section {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+
+
+.testimonials-section .mobile {
+  display: none;
+}
+
+.testimonials-section .testimonials-card {
+  width: 442px;
+  background: #ffffff;
+  box-shadow: 0px 9px 36px rgb(129, 129, 129);
+  border-radius: 24px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.testimonials-section .testimonials-card::before {
+  content:"";
+  width: 28px;
+  position: absolute;
+  height: 40px;
+  top: -40px;
+  left: 60px;
+  background: var(--Dark-blue-color);
+  border-radius: 24px 24px 0 0;
+}
+.testimonials-section .testimonials-card:last-child::before {
+  left: 40px;
+  top: -50px;
+  border-radius: 0 0 24px 24px ;
+  height: calc(100% + 90px);
+  z-index: -1;
+}
+
+.testimonials-section .testimonials-card .contant {
+ font-family: sans-serif;
+ font-weight: 900;
+ font-size: 24px;
+ line-height: 150%;
+ color: #ffffff;
+ border-radius: 24px;
+ padding: 24px 32px;
+ background: var(--light-blue-color);
+}
+
+.testimonials-section .testimonials-card:last-child .contant {
+  background-color: var(--orange-color);
+}
+
+.testimonials-section .testimonials-card .info h4 {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 120%;
+  margin: 0;
+  color: var(--Dark-blue-color);
+}
+
+.testimonials-section .testimonials-card .info {
+  padding: 15px 22px;
+  background: #ffffff;
+  border-radius: 24px;
+}
+
+.testimonials-section .testimonials-card .info p.company {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--Dark-blue-color);
+}
+
+.testimonials-section .testimonials-card img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 32px;
+  bottom: 10px;
+}
+
+.testimonials-section .testimonials-card:last-child {
+  transform: translateX(20px);
+
+
+}
+.testimonials-section .noyon {
+  margin-bottom: 30px;
+}
+
+
+.course-section {
+  background: linear-gradient(180deg,#6F7DFB 0%,
+  #26308c 100%);
+  padding: 70px 0;
+}
+
+.course-section h2 {
+  text-align:center ;
+}
+
+.course-section .course-cards {
+  display: flex;
+  gap: 70px;
+}
+
+
+.course-section .course-cards img {
+  width: 100%;
+  filter: drop-shadow(0px 4px 8px rgb(0, 0, 0.25));;
+
+   border-radius:24px ;
+
+  
+
+}
+
+.course-section .course-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 0px 32px;
+  margin: 40px;
+  padding-bottom: 20px;
+}
+
+
+.course-section .course-card h3 {
+font-family: sans-serif;
+font-weight: 900;
+font-size: 25 px;
+line-height: 150%;
+color: var(--Dark-blue-color);
+
+}
+
+
+.course-section .course-card .info {
+display: flex;
+gap: 16px;
+justify-content:space-between;
+align-items: center;
+
+}
+
+.course-section .course-card .duration {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  white-space: nowrap;
+  color: var(--Dark-blue-color);
+}
+
+/* app-sections */
+.app-sections {
+  text-align: center;
+}
+
+.app-sections .app-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 24px;
+}
+
+.app-sections .app-btn {
+  padding: 16px 31px;
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 310px;
+}
+
+.app-sections .app-btn span {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+
+/* Footer */
+footer {
+  background: var(--Dark-color);
+  color: #ffffff;
+  margin-top: 100px;
+  padding: 70px 0;
+}
+
+footer a {text-decoration: none;
+color: #ffffff;
+}
+
+footer h3 {
+  color: var(--orange-color);
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+footer ul li {
+ margin: 16px 0;
+}
+
+footer .containar {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .social {
+  margin-left: 20px;
+}
+
+
+footer .social a {
+ margin-right: 28px;
+}
+
+footer form {
+  margin-left: 20px;
+  
+  margin-top: 16px;
+  position: relative;
+}
+
+footer form input {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  border-radius: 8px;
+  padding: 10px 32px;
+  border: none;
+  width: 86%;
+  color: #000000;
+  
+}
+
+footer form .Sumbit-btn {
+position: absolute; 
+right: 5px;
+top: 50%; 
+transform: translateY(-50%); 
+background: var(--Dark-blue-color);
+border-radius: 8px; 
+padding: 8px 32px; 
+border: 0; 
+font-family: sans-serif; 
+font-size: 16px; font-weight: 500; 
+line-height: 1.8; color: #fff; 
+cursor: pointer;
+
+
+}
+
+footer .copyright {
+  margin-top: 36px;
+  
+}
