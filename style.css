@@ -1,6 +1,15 @@
 * {margin: 0;
-padding: 0;}
+padding: 0;
+ 
 
+
+}
+
+
+body {
+  margin: 0;
+    background-color: white;
+}
 
 :root {
     --orange-color:#da722C;
@@ -37,28 +46,176 @@ padding: 0;}
   font-weight: bold;
   color: #E8F7FB;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn.dark {
   background:var(--Dark-blue-color);
+ 
 }
 .btn.light {
   background: var(--orange-color);
+  
 }
 
-
-.wrapper {
-  max-width: 1134px;
-  margin: 0 auto;
-}
+  .wrapper {
+    max-width: 1334px;
+    margin: 0 auto;
+  }
 
 header {
 
-background-color: #6F7DFB;
-height: 100vh;
-width: 100%;}
+   background-color: #6F7DFB;
+    width: 100%;
+
+}
+
 
 nav {
+  max-width: 1334px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  align-items: center;
+  
+}
+
+nav .menu {
+  display: flex;
+  list-style: none;
+  gap: 55px;
+  align-items: center;
+}
+
+
+nav .menu a {
+
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+ 
+
+nav .logo {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+ 
+}
+
+
+.banner-section {
+  /* border: 1px solid red; */
+  /* margin: 85px 0 0 0; */
+  padding-top: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.banner-section .banner-left {
+  max-width:457px;
+}
+
+.banner-section .banner-left h1 {
+ font-size: 50px;
+ font-family:Raleway;
+ font-weight: 900;
+ line-height: 125%;
+ color: #ffffff;
+ margin-bottom: 24px;
+
+}
+
+
+.banner-section .banner-left p {
+ font-family: sans-serif;
+  font-size: 15px;
+  line-height: 200%;
+  color: #E8F7FB;
+  margin-bottom: 20px;
+  
+
+}
+
+.banner-section .banner_right img {
+  max-width: 446px;
+  vertical-align: middle;
+}
+
+.achievement-card {
+  position: absolute;
+  min-width: 200px;
+}
+
+
+.achievement-card .contant {
+ border-radius: 24px;
+ background-color: #ffffff;
+ padding: 8px 32px;
+ z-index: 10;
+ position: relative;
+}
+
+
+.achievement-card.students-enrolled {
+left: 49%;
+top: 270px;
+}
+
+
+.achievement-card.ovearll-rating {
+left: 47%;
+top: 470px;
+}
+
+
+.achievement-card  h2{
+ font-family: sans-serif;
+ font-weight: bold;
+ font-size: 36px;
+ color: var(--Dark-blue-color);
+ margin: -8px;
+ text-align: center;
+ margin-bottom: 8px;
+
+}
+
+
+
+.achievement-card  p{
+ font-family: sans-serif;
+ font-weight: normal;
+ font-size: 16px;
+ color: var(--Dark-blue-color);
+ margin: -5px;
+ text-align: center;
+ margin-bottom: 5px;
+
+}
+
+
+.achievement-card .bg{
+position: absolute;
+height: 100%;
+width: 100%;
+background: linear-gradient(180deg,
+#6F7DFB 0%, #3b448f 100%);
+border-radius: 24px;
+top: 8px;
+left: 8px;
+z-index: 1;
+}
+
+
+
+
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,8 +283,8 @@ nav ul li a {
 .banner-section  .left {
   flex: 1;
  
-}
-
+} */
+.............
 /* .banner-section  .right{
   align-self: flex-end;
 } */
@@ -136,9 +293,9 @@ nav ul li a {
  height: 520px;
  vertical-align: middle;
 } */
+............
 
-
-.achievement-card {
+/* .achievement-card {
   position: absolute;
   min-width: 200px;
 }
@@ -200,16 +357,26 @@ top: 8px;
 left: 8px;
 z-index: 1;
 }
-
+ */
 
 
 
 
 /* testimonials Sections */
 
-section {
-  margin-top: 100px;
+
+.testimonials-section {
+    background-color: white;
+    width: 100%;
+    margin-top: 50px;
 }
+
+.testimonials-wrapper {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
 
 h2 {
   font-family: sans-serif;
@@ -234,9 +401,11 @@ section p {
 }
 
 .testimonials-section {
+  background-color: white;
   display: flex;
   gap: 100px;
   align-items: center;
+  padding: 70px 0 ;
 }
 
 
@@ -393,6 +562,7 @@ align-items: center;
 /* app-sections */
 .app-sections {
   text-align: center;
+  padding-top: 70px;
 }
 
 .app-sections .app-buttons {
@@ -482,7 +652,7 @@ footer form input {
 
 footer form .Sumbit-btn {
 position: absolute; 
-right: 5px;
+right: 15px;
 top: 50%; 
 transform: translateY(-50%); 
 background: var(--Dark-blue-color);
